@@ -1,0 +1,159 @@
+body{
+  background-color: black;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .boxGold{
+    background-color: grey;
+    width: 100%;
+    box-shadow: 4px;
+    border: 15px solid gold;
+    padding: 50px;
+    margin: 20px;
+  }
+
+  .titleFont {
+    font-family: 'Mohave', sans-serif;
+  }
+
+ /* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/*Stolen */ 
+
+.container  {
+  position: relative;
+  top:15em;
+  width: 45em;
+  height: 60em;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  border: 0.5em double red;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 1em;
+  background:rgb(36, 36, 36);
+  box-shadow: red 2px 2px 15px ;
+  
+
+}
+
+.recipe {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1.0;
+  font-size: 1.9em;
+  color: mediumblue;
+  font-family: "Yuji Mai";
+  font-weight: normal;
+  opacity: 0;
+
+}
+
+.imageLink {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  position: absolute;
+  object-fit: cover;
+  z-index: 2;
+  top: 17em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  border: 0.6em double red;
+  background: linear-gradient(to bottom, rgb(61, 0, 0), rgb(255, 76, 76));
+  background-size: cover;
+  background-origin: border-box;
+  box-shadow: 0 0 0px white;
+  
+  
+}
+
+.image:hover {
+  height: 11.5em;
+  width: 11.5em;
+  
+}
+
+.ingredientsDeco, .instructionsDeco, .nutritionDeco {
+  top: 0;
+  height: 0;
+  border-top: 0.8em solid white;
+  border-bottom: 0.8em solid white;
+  border-left: 0.8em solid transparent;
+  border-right: 0.8em solid transparent;
+  opacity: 0;
+  animation: fadeIn 1s 4s forwards, subExtend 1s 4.5s forwards;
+}
+
+.underline  {
+  position: absolute;
+  border-top: 1.4em solid white;
+  border-bottom: 1.4em solid white;
+  border-left: 1.4em solid transparent;
+  border-right: 1.4em solid transparent;
+  margin-top: 0em;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: appear 0.9s 1.4s forwards, extend 1s 2.2s forwards;
+}
+
+/* End Stolen*/
+
+.f-in {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
