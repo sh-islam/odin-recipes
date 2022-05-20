@@ -51,16 +51,22 @@ body{
   width: 20em;
   border-radius: 50%;
   top: 50%;
-  left: 5%;
-  right: 5%;
+  left: 3%;
+}
+.round:hover {
+  height: 22em;
+  width: 22em
 }
 
 /* text in paragraphs */
 p{
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 2em;
+  padding-right: 2em;
   font-size: 16px;
+  color: sandybrown;
 }
+
+
 
 /*Stolen */ 
 
